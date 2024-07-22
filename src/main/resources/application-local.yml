@@ -1,0 +1,23 @@
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    server: http://localhost:8080
+    disable-swagger-default-url: 'true'
+    path: /swagger-ui.html
+    oauth:
+      client-id:
+      client-secret:
+      additional-query-string-params:
+        audience: customer
+      use-basic-authentication-with-access-code-grant: 'true'
+spring:
+  datasource:
+    username: admin
+    url: jdbc:h2:mem:userdb
+    driverClassName: org.h2.Driver
+    password: nimda
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
