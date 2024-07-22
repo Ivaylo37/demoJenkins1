@@ -43,7 +43,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public EmployeeResponseDto toEmplyeeResponse(Employee employee) {
-        return new EmployeeResponseDto(employee.getId(), employee.getGivenName(),
+        return new EmployeeResponseDto( employee.getGivenName(),
                 employee.getFamilyName(), employee.getEmail(), employee.getRole());
     }
 }

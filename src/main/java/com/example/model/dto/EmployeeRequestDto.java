@@ -4,18 +4,19 @@ package com.example.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.jetbrains.annotations.NotNull;
-
+@NoArgsConstructor
 @AllArgsConstructor
 @Data
 public class EmployeeRequestDto {
 
     @NotNull
-    private final String givenName;
+    private String givenName;
 
     @NotNull
-    private final String familyName;
+    private String familyName;
 
     @NotNull
-    private final String email;
+    private String email;
 }
